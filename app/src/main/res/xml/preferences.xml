@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="enabled"
+        android:title="@string/enabled_title"
+        android:summary="@string/enabled_summary"
+        android:defaultValue="false"
+        />
+    <CheckBoxPreference
+        android:key="persistent"
+        android:title="@string/persistent_title"
+        android:summary="@string/persistent_summary"
+        android:defaultValue="true" />
+    <EditTextPreference
+        android:key="timeout"
+        android:title="@string/timeout_title"
+        android:defaultValue="300"
+        android:inputType="number"
+        android:summary="@string/timeout_summary"
+        />
+    <EditTextPreference
+        android:key="calibration"
+        android:title="@string/calibration_title"
+        android:defaultValue="123.4"
+        android:inputType="number"
+        android:numeric="decimal"
+        android:summary="@string/calibration_summary"
+        />
+</PreferenceScreen>
